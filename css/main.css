@@ -231,7 +231,7 @@ nav a:hover {
     background-color: #fff;
     display: inline-block;
     text-align: left;
-    margin: 15px 10px;
+    margin: 15px 20px;
 }
 
 /*-----------Gallery-----------*/
@@ -255,7 +255,7 @@ nav a:hover {
 }
 
 .gallery-block p {
-    padding: 10px;
+    padding: 0 10px;
 }
 
 /*-----------Heritage-----------*/
@@ -430,25 +430,25 @@ footer {
 
 .side-nav a {
     display: block;
-    width: 25%;
-    background-color: #ff9640;
+    width: 100%;
+    background-color: #fb9b4d;
     float: left;
     line-height: 40px;
     text-decoration: none;
     color: #000;
-    text-transform: uppercase;
     padding: 5px;
     font-weight: normal;
-    border-radius: 2px;
 }
 
 .side-nav a:hover {
-    background-color: #ffb273;
+    background-color: #fff;
+    color: #ff9640;
 }
+
 
 .side-nav div {
     float: left;
-    width: 300px;
+    width: 270px;
 }
 
 .side-nav div a {
@@ -672,7 +672,7 @@ footer {
         float: none;
         display: inline-block;
         text-align: center;
-        width: 85%;
+        width: 100%;
     }
 
     .side-nav a {

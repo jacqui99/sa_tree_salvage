@@ -18,6 +18,9 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css"/>
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.smooth-scroll.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -32,12 +35,13 @@
                     <a href="gallery.html">Gallery</a>
                     <a href="http://localhost/#heritage">Heritage</a>
                     <a href="#contact">Contact</a>
+                    <a href="#social">Social</a>
                 </nav>
             </header><!-- end #header-->
 
             <div class="side-nav">
                 <div>
-                    <a href="#">Services - Supply</a>   
+                    <a href="#">SUPPLY</a>   
                     <div class="sub-menu">
                         <a href="#timber">Timber</a>
                         <a href="#slabs">Slabs &amp; Sawn Boards</a>
@@ -47,7 +51,7 @@
                 </div>
             </div><!-- end #side-nav -->
 
-            <div class="nav-image" style="background-image:url('img/timber.png');" alt="timber pile">
+            <div id="timber" class="nav-image" style="background-image:url('img/timber.png');" alt="timber pile">
                 <a name="timber"></a>
                 <div class="service-info">
                     <div class="center">
@@ -71,13 +75,14 @@
                         Red Iron Bark<br/>
                     </p>    
                     <br/>
-                    <a class="black-link" href="#slabs">
+                    <a href="#slabs" class="black-link">
                     <h4 class="center">NEXT SERVICE <i class="icon-chevron-down"></i></h4>
                     </a>
+                    
                 </div>
             </div>
            
-            <div class="nav-image" style="background-image:url('img/slab.png');" alt="slabs">
+            <div id="slabs" class="nav-image" style="background-image:url('img/slab.png');" alt="slabs">
                 <a name="slabs"></a>
                 <div class="service-info">
                     <div class="center">
@@ -88,13 +93,13 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a consequat felis. Nulla accumsan nulla sed lorem venenatis sodales. Nam sit amet massa euismod, volutpat metus quis, elementum sem. In sit amet lectus felis. Aliquam sit amet eros nibh. Mauris eu ultrices nibh. Integer rhoncus purus justo, ac dignissim erat mollis vitae. Nulla vitae quam metus. Praesent facilisis lacus non congue rutrum. Curabitur suscipit tincidunt nunc rutrum placerat. Duis vel est in justo condimentum mattis. Aenean interdum mi at massa venenatis, et porttitor est convallis. Nunc ornare mi ipsum. Fusce commodo, quam et ornare blandit, nisi urna tristique elit, in ullamcorper purus urna vel dolor. Morbi tristique aliquet enim vel mollis. In rhoncus nec purus vitae semper.
                     </p>
                     <br/>
-                    <a class="black-link" href="#firewood">
+                    <a href="#firewood" class="black-link">
                     <h4 class="center">NEXT SERVICE <i class="icon-chevron-down"></i>
                     </h4>
                 </div>
             </div>
 
-            <div class="nav-image" style="background-image:url('img/firewood.png');" alt="firewood">
+            <div id="firewood" class="nav-image" style="background-image:url('img/firewood.png');" alt="firewood">
                 <a name="firewood"></a>
                 <div class="service-info">
                     <div class="center">
@@ -105,13 +110,13 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a consequat felis. Nulla accumsan nulla sed lorem venenatis sodales. Nam sit amet massa euismod, volutpat metus quis, elementum sem. In sit amet lectus felis. Aliquam sit amet eros nibh. Mauris eu ultrices nibh. Integer rhoncus purus justo, ac dignissim erat mollis vitae. Nulla vitae quam metus. Praesent facilisis lacus non congue rutrum. Curabitur suscipit tincidunt nunc rutrum placerat. Duis vel est in justo condimentum mattis. Aenean interdum mi at massa venenatis, et porttitor est convallis. Nunc ornare mi ipsum. Fusce commodo, quam et ornare blandit, nisi urna tristique elit, in ullamcorper purus urna vel dolor. Morbi tristique aliquet enim vel mollis. In rhoncus nec purus vitae semper.
                     </p>
                     <br/>
-                    <a class="black-link" href="#wood-blanks">
+                    <a href="#wood-blanks" class="black-link">
                     <h4 class="center">NEXT SERVICE <i class="icon-chevron-down"></i>
                     </h4>
                 </div>
             </div>
 
-            <div class="nav-image" style="background-image:url('img/wood-blanks.png');" alt="wood turing blanks">
+            <div id="wood-blanks" class="nav-image" style="background-image:url('img/wood-blanks.png');" alt="wood turing blanks">
                 <a name="wood-blanks"></a>
                 <div class="service-info">
                     <div class="center">
@@ -122,10 +127,9 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a consequat felis. Nulla accumsan nulla sed lorem venenatis sodales. Nam sit amet massa euismod, volutpat metus quis, elementum sem. In sit amet lectus felis. Aliquam sit amet eros nibh. Mauris eu ultrices nibh. Integer rhoncus purus justo, ac dignissim erat mollis vitae. Nulla vitae quam metus. Praesent facilisis lacus non congue rutrum. Curabitur suscipit tincidunt nunc rutrum placerat. Duis vel est in justo condimentum mattis. Aenean interdum mi at massa venenatis, et porttitor est convallis. Nunc ornare mi ipsum. Fusce commodo, quam et ornare blandit, nisi urna tristique elit, in ullamcorper purus urna vel dolor. Morbi tristique aliquet enim vel mollis. In rhoncus nec purus vitae semper.
                     </p>
                     <br/>
-                    <h4 class="center">
-                        <a href="#top" class="black-link">To The Top 
-                        <i class="icon-chevron-up"></i>
-                        </a>
+                    <h4 class="center top">
+                        <a href="#top" class="black-link">To The Top
+                        <i class="icon-chevron-up"></i></a>
                     </h4>
                 </div>
             </div>
@@ -148,7 +152,7 @@
                 </div>    
             </div><!-- ! end #social  -->  
 
-            <footer>
+            <footer id="contact">
                 <div id="contact-section">
                     <a name="contact"></a>
                     <h2>- Contact -</h2>
